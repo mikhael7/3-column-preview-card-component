@@ -104,7 +104,7 @@ main>section>div.card-container button {
     border: none;
     border-radius: 2rem;
     font-size: var(--font-size-m);
-    padding: 1rem;
+    padding: .75rem;
     font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
 }
 
@@ -141,5 +141,24 @@ main>section>div.card-container>div.card-luxury>button {
     main>section>div.card-container {
         flex-direction: row;
         justify-content: center;
+    }
+
+    main>section>div.card-container {
+        max-width: calc(32.5rem / 0.7);
+    }
+
+    main>section>div.card-container>div.card-sedans {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: var(--border-radius-s);
+    }
+
+    main>section>div.card-container>div.card-luxury {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: var(--border-radius-s);
+        border-top-right-radius: var(--border-radius-s);
+    }
+
+    main>section>div.card-container button {
+        margin-top: 4rem;
     }
 }
